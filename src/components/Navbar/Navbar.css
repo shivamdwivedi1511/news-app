@@ -5,6 +5,7 @@ a {
   text-decoration: none;
 }
 
+
 .links {
     *zoom: 1;
     padding: 50px;
@@ -14,6 +15,15 @@ a {
     text-align: center;
     /* background: #313131; */
     background: #353B3F;
+    width: 60%;
+    float:right;
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 99;
+    
+    background-color: rgba(255, 255, 255, 0)
+
   }
   .links:before, .links:after {
     content: "";
@@ -24,30 +34,7 @@ a {
   }
 
   
-  .link-effect-3 a {
-    padding: 10px 0;
-    margin: 0 20px;
-    color: #797878;
-    text-shadow: none;
-    position: relative;
-  }
-  .link-effect-3 a::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    padding: 10px 0;
-    max-width: 0;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    content: attr(data-hover);
-    -webkit-transition: max-width 0.5s;
-    -moz-transition: max-width 0.5s;
-    transition: max-width 0.5s;
-  }
-  .link-effect-3 a:hover::before {
-    max-width: 100%;
-  }
+  
 
 
 
@@ -164,3 +151,4 @@ a {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+  

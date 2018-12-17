@@ -1,27 +1,27 @@
 import React from "react";
 import "./Navbar.css";
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const Navbar = props => {
   return (
-    <div id="content">
+    <div id="content" >
       <section className="links">
         <nav className="link-effect-12" id="link-effect-12">
-          <Link to='/' data-hover="Top">
+          <NavLink to='/'  exact data-hover="Top" activeStyle={{color:'yellow'}}>
             Top
-          </Link>
-          <Link to='/all' data-hover="All">
+          </NavLink>
+          <NavLink to='/all'  exact data-hover="All" activeStyle={{color:'green'}}>
             All
-          </Link>
+          </NavLink>
           {/* <a href="/trending" data-hover="Trending">
           Trending
           </a> */}
-          <Link to='/national' data-hover="National">
+          <NavLink to='/national' exact data-hover="National" activeStyle={{color:'cyan'}}>
             National
-          </Link>
-          <Link to='/international' data-hover="International">
+          </NavLink>
+          <NavLink to='/international' exact data-hover="International" activeStyle={{color:'orange'}}>
             International
-          </Link>
+          </NavLink>
         </nav>
       </section>
     </div>
