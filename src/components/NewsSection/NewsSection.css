@@ -21,7 +21,8 @@ span.s2 {
 
 /*My hum... body.. yeah.. */
 body {
-  background-color: #353B3F;
+  /* background-color: #353B3F; */
+  background-color: rgb(15, 15, 15);
   font-family: "Roboto", sans-serif;
 }
 
@@ -35,14 +36,15 @@ body {
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 
 /* Image on the left side */
 .thumbnail {
   float: left;
   position: relative;
-  left: 30px;
-  top: -30px;
+  left: 0px;
+  top: 0px;
   height: 280px;
   width: 550px;
   object-fit: fill;
@@ -50,6 +52,10 @@ body {
   -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
   overflow: hidden;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 7px;
 }
 
 /*object-fit: cover; */
@@ -149,4 +155,17 @@ h6 {
   -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.readmore a{
+
+  color:red;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin: 5px 0 20px;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
 }

@@ -10,7 +10,7 @@ const Navbar = props => {
           <NavLink to='/'  exact data-hover="Top" activeStyle={{color:'yellow'}}>
             Top
           </NavLink>
-          <NavLink to='/all'  exact data-hover="All" activeStyle={{color:'green'}}>
+          <NavLink to='/all'  exact data-hover="All" activeStyle={{color:'lightgreen'}}>
             All
           </NavLink>
           {/* <a href="/trending" data-hover="Trending">

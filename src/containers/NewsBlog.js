@@ -20,7 +20,7 @@ class NewsBlog extends Component {
     
     return (
       <div>
-        <h1 className="heading" >News Blog</h1>
+        <h1 className="heading" >News Blog.</h1>
         <Navbar/>
         
         {/* <TopNews/> */}

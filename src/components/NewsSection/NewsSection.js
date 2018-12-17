@@ -5,6 +5,7 @@ const NewsSection =(props)=>{
 
     let d=new Date(props.item.publishedAt);
     let date=`${d.getDate()}/${d.getMonth() +1}/${d.getFullYear()}`;
+    console.log(props.item.url)
     
 
     return(
@@ -16,6 +17,8 @@ const NewsSection =(props)=>{
                 <div className="separator"></div>
                 <p>{props.item.content}</p>
                  <h6>{date}</h6> 
+                 <h3 className='readmore' ><a href={props.item.url} target="blank">Read More</a></h3>
+                 <hr className='separator'></hr>
                 </div>
                
                 
