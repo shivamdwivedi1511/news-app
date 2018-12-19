@@ -20,17 +20,18 @@ class NationalNews extends Component{
           this.setState({
             posts: post
           });
-          console.log(post);
+          
         });
+        
       }
       render() {
         let post = null;
         if (this.state.posts !== null) {
           
           post = this.state.posts.map((item, index) => {
-            console.log(item.description===null)
+            
             if(item.description!==null && item.content!==null){
-              console.log(item.description===null)
+              
               return <NewsSection item={item} key={index} />;
             }
             else{

@@ -103,7 +103,7 @@ a {
     -o-transition: 0.1s 0.2s;
     -webkit-transition: 0.1s;
     -webkit-transition-delay: 0.2s;
-    transition: 0.1s 0.2s;
+    transition: 0.1s 0.2s; 
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -webkit-transform: translateX(100%);

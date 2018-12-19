@@ -14,14 +14,17 @@ class TopNews extends Component{
         // 'https://newsapi.org/v2/top-headlines?category=sports&country=in&apiKey=494c83d04f7a4c86ba00d6064e8a153b';
     
           
-        axios.get(url).then(Response => {
-          console.log(Response);
+        axios.get(url)
+        .then(Response => {
+          console.log(Response.data.articles.urlToImage)
+          
           post = [...Response.data.articles];
           this.setState({
             posts: post
-          });
+          })
           console.log(post);
-        });
+        })
+        
       }
       render() {
         let post = null;
